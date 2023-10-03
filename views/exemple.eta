@@ -1,0 +1,5 @@
+<% layout("./!layout.eta") %>
+<body>
+    <p>exemple d'utilisation de Eta</p>
+    <p><%= it.msg %></p>
+</body>
