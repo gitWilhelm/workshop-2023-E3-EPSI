@@ -1,51 +1,51 @@
 import { prisma } from "./dbEngine.js";
 
 
-export function insertMockData1() {
-    prisma.tag.create({
+export async function insertMockData1() {
+    await prisma.tag.create({
         data: {
             id: 1,
             label: "PC-portable"
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 2,
             label: "PC-Fixe"
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 3,
             label: "Ecran 15.6\""
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 7,
             label: "Ecran 17\""
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 4,
             label: "2004"
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 5,
             label: "2005"
         }
     })
-    prisma.tag.create({
+    await prisma.tag.create({
         data: {
             id: 6,
             label: "2006"
         }
     })
 
-    prisma.postAppareil.create({
+    await prisma.postAppareil.create({
         data: {
             label: "HP Pavilion PC portable",
             estFonctionnel: true,
@@ -69,7 +69,7 @@ export function insertMockData1() {
         }
     })
 
-    prisma.postAppareil.create({
+    await prisma.postAppareil.create({
         data: {
             label: "Dell PC Fixe slim",
             estFonctionnel: true,
@@ -92,7 +92,7 @@ export function insertMockData1() {
         }
     })
 
-    prisma.postAppareil.create({
+    await prisma.postAppareil.create({
         data: {
             label: "HP Elitebook PC Portable",
             estFonctionnel: true,

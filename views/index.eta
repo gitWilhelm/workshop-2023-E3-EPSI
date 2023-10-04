@@ -1,1 +1,93 @@
 <% layout("./!layout.eta") %>
+
+<nav class="navbar navbar-expand-lg bg-blue">
+      <div class="container-fluid">
+
+        <img
+            src="/imgs/logo.png"
+            alt=""
+            class="img-logo"
+          />
+        
+        <a class="navbar-brand" href="#">TechReCycleGrenoble</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Notre Projet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/liste-produits">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/liste-composants">Composants</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-page">
+      <div class="left-side">
+        <p>
+          Réutiliser le matériel informatique obsolète, dans une optique
+          d’optimisation de durée de vie des produits. C’est l’objectif que nous
+          nous sommes fixés.
+        </p>
+      </div>
+      <div class="right-side">
+        <img src="/imgs/img-right.png" alt="" />
+      </div>
+    </div>
+    <hr style=" width: 80%;  margin: auto;">
+
+     <h1 class="text-center mt-2">Projet workshop : TechReCycleGrenoble</h1>
+  <div class="mx-4">
+    <p class="m-4">
+      De nos jours le matériel informatique et numérique ancien est souvent
+      jeté, de nombreuses entreprises de seconde main propose de les
+      reconditionner mais finit par être obsolètes ? Notre projet est une
+      mission locale et l’objectif est de mettre en place une application qui
+      crée une relation entre le matériel informatique obsolète et les
+      particuliers pour soutenir des valeurs sociales et environnementale de la
+      commune de Grenoble.
+    </p>
+    <p class="m-4">
+      En effet nous récupérons le matériel informatique obsolète que les
+      particuliers n’utilisent plus, l’états du matériel est vérifié et donné
+      aux particuliers à besoin de nécessité et aux personnes de manque
+      d’expérience avec le domaine informatique. Les personnes récupèrent du
+      matriciel informatique est bénéficient de bon de réduction dans les
+      magasins d’électro-ménager dû à leur participation environnementale et
+      sociale.
+    </p>
+    <p class="m-4">
+      L'application nommée “TechReCycleGrenoble”, permet de recenser et de
+      récupérer le matériel informatique ainsi que les différents IOT, aux prés
+      de particuliers. Le principe de l’application ce base sur la méthode de la
+      seconde main, nous donnerons une deuxième vie au matériel informatique en
+      lui permettant de trouver un nouveau ou une nouvelle propriétaire. Ainsi
+      les personnes bénéficieront d’une total transparence sur l’information des
+      produits qui leur seront remis. En d'autres termes, nous augmentons
+      l'espérance de vie du matériel informatique en lui épargnant de rester au
+      fond du placard ou de finir à la poubelle. Evitant ainsi les contraintes
+      environnementales liée au numérique. Aux personnes les plus démunit (en
+      cas de nécessitée technologique) qui ne peuvent pas effectuer les
+      démarches administratives en ligne car ne possédant pas de matériel
+      informatique ou un manque de connaissance liée au numérique (un SAV sera
+      mis à disposition).
+    </p>
+  </div>

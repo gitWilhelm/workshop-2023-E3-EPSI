@@ -14,6 +14,8 @@ let settings: {port?: number} = JSON.parse(
     fs.readFileSync("./settings.json", 'utf-8')
 );
 
+//await dbinit.insertMockData1()
+
 async function main() {
     const app = new Koa()
     app.use(router.routes())

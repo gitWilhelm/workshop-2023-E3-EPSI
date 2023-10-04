@@ -2,6 +2,42 @@
     background-color: #1B6B93;
 }
 
-.navbar{
-    height: 200px;
+.img-logo{
+    height: 70px;
+}
+
+.main-page{
+    width: 100%;
+    display: flex;
+}
+
+.right-side{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5em;
+}
+
+.left-side{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.right-side img{
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+}
+
+.navbar-brand{
+    margin-left: 2em;
+    color: #4FC0D0;
 }
