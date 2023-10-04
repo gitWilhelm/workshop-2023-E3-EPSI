@@ -1,6 +1,7 @@
 import fs from "fs"
 import Koa from "koa"
 
+import { logOK } from "./lib/logger.js"
 import { router } from "./router.js"
 
 let settings: {port?: number} = JSON.parse(
@@ -11,4 +12,6 @@ const app = new Koa()
 
 app.use(router.routes())
 
-app.listen(settings.port || 8080)
+const server = app.listen(settings.port || 8080)
+
+if (server.listening) logOK(`Web server started`)

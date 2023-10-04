@@ -1,4 +1,4 @@
-import { Context } from "koa";
+//import { Context } from "koa";
 import { Middleware } from "@koa/router";
 import { eta } from "../config.js"
 
@@ -12,5 +12,12 @@ export const test: Middleware = ({request, response}) => {
     response.body = eta.render("exemple", {
         title: "exemple de passage de titre",
         msg: request.query.msg || "exemple de passage de donnée"
+    })
+}
+
+export const deviceListing: Middleware = ({request, response}) => {
+    response.status = 200
+    response.body = eta.render("deviceListing", {
+        title: "TODO",
     })
 }

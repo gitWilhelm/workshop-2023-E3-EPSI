@@ -6,3 +6,4 @@ export const router = new Router();
 
 router.get("/", generalCtrl.index)
 router.get("/exemple", generalCtrl.test)
+router.get("/liste-appareils", generalCtrl.deviceListing)
