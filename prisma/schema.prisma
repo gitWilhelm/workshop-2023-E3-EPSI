@@ -10,21 +10,26 @@ datasource db {
   url      = "file:./dev.db"
 }
 
-model Utilisteur {
-  id    Int @id @default(autoincrement())
-  nom   String
-  email String
-  tel   String
-}
+//model Utilisteur {
+//  id    Int @id @default(autoincrement())
+//  nom   String
+//  email String
+//  tel   String
+//}
 
-model Appareil {
-  id             Int @id @default(autoincrement())
-  ref            String
-  label          String
-  estFonctionnel Boolean
+model PostAppareil {
+  id               Int @id @default(autoincrement())
+  ref              String?
+  label            String
+  descFonctionelle String
+  descTechnique    String
+  estFonctionnel   Boolean
+  etat             String
+  tags             Tag[] @relation("TagsAuxPosts")
 }
 
 model Tag {
-  id    Int @id @default(autoincrement())
-  label String
+  id        Int @id @default(autoincrement())
+  label     String
+  appareils PostAppareil[] @relation("TagsAuxPosts")
 }
