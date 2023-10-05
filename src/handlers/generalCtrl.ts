@@ -13,11 +13,12 @@ export const index: Middleware = ({request, response}) => {
     })
 }
 
-export const test: Middleware = ({request, response}) => {
+export const test: Middleware = async ({request, response}) => {
     response.status = 200
+    const data: PostListingData = await bundlePostListingData()
     response.body = eta.render("exemple", {
         title: "exemple de passage de titre",
-        msg: request.query.msg || "exemple de passage de donnée"
+        data
     })
 }
 

@@ -1,3 +1,10 @@
 <% layout("./!layout.eta") %>
-<p>front a remplir</p>
-<%= it.data.post[1].label %>
+<p>exemple d'utilisation de Eta</p>
+<% it.data.post.forEach((post) => { %>
+    <p>
+        ID de post = <%= post.id %> <br>
+        Label = <%= post.label %> <br>
+        Description = <%~ post.descFonctionelle %> <br>
+    </p>
+    <br>
+<% }) %>

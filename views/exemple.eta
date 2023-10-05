@@ -1,3 +1,10 @@
 <% layout("./!layout.eta") %>
 <p>exemple d'utilisation de Eta</p>
-<p><%= it.msg %></p>
+<% it.data.post.forEach((post) => { %>
+    <p>
+        ID de post = <%= post.id %> <br>
+        Label = <%= post.label %> <br>
+        Description = <%~ post.descFonctionelle %> <br>
+    </p>
+    <br>
+<% }) %>

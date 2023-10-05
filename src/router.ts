@@ -9,4 +9,4 @@ router.get("/liste-produits", generalCtrl.deviceListing)
 router.get("/liste-composants", generalCtrl.componentListing)
 router.get("/fiche-produit", generalCtrl.postDetails)
 
-router.get("/exemple", generalCtrl.test)
+router.get("/test", generalCtrl.test)
